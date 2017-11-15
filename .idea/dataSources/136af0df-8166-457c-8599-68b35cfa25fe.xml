@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="INFO6150Final@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="INFO6150Final">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="csye6220final"/>
+    <schema id="4" parent="1" name="dvdrentals"/>
+    <schema id="5" parent="1" name="info6210"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="lab3"/>
+    <schema id="8" parent="1" name="moviedb"/>
+    <schema id="9" parent="1" name="mydb"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="pubs_1"/>
+    <schema id="13" parent="1" name="pubs_2"/>
+    <schema id="14" parent="1" name="sys"/>
+    <table id="15" parent="2" name="File"/>
+    <table id="16" parent="2" name="Post"/>
+    <table id="17" parent="2" name="User"/>
+    <table id="18" parent="2" name="UserFile"/>
+    <column id="19" parent="15" name="FileID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="15" name="FilePath">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="21" parent="15" name="PostID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="22" parent="15" name="FK_7ymcc7hoi18wj48lpja5kvld">
+      <ColNames>PostID</ColNames>
+    </index>
+    <key id="23" parent="15" name="PRIMARY">
+      <ColNames>FileID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="24" parent="15" name="FK_7ymcc7hoi18wj48lpja5kvld">
+      <ColNames>PostID</ColNames>
+      <RefSchemaName>info6150final</RefSchemaName>
+      <RefTableName>Post</RefTableName>
+      <RefColNames>PostID</RefColNames>
+    </foreign-key>
+    <column id="25" parent="16" name="PostID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="16" name="Title">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="16" name="Body">
+      <Position>3</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="28" parent="16" name="UID">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="29" parent="16" name="FK_7t998o9i03owx7ly5yh5i3l9t">
+      <ColNames>UID</ColNames>
+    </index>
+    <key id="30" parent="16" name="PRIMARY">
+      <ColNames>PostID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="31" parent="16" name="FK_7t998o9i03owx7ly5yh5i3l9t">
+      <ColNames>UID</ColNames>
+      <RefSchemaName>info6150final</RefSchemaName>
+      <RefTableName>User</RefTableName>
+      <RefColNames>UID</RefColNames>
+    </foreign-key>
+    <column id="32" parent="17" name="UID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="17" name="UserName">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="17" name="PassWord">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="17" name="Email">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="36" parent="17" name="PRIMARY">
+      <ColNames>UID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="18" name="FileID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="38" parent="18" name="FilePath">
+      <Position>2</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="39" parent="18" name="PostID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="40" parent="18" name="FK_76l9opkmu21ghsur66fhpe35k">
+      <ColNames>PostID</ColNames>
+    </index>
+    <key id="41" parent="18" name="PRIMARY">
+      <ColNames>FileID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="42" parent="18" name="FK_76l9opkmu21ghsur66fhpe35k">
+      <ColNames>PostID</ColNames>
+      <RefSchemaName>info6150final</RefSchemaName>
+      <RefTableName>Post</RefTableName>
+      <RefColNames>PostID</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
