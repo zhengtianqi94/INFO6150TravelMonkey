@@ -19,35 +19,35 @@
 }
 
 .slide-1 {
-    background-image: url("../pages/assets/img/index/cover1.jpg");
+    background-image: url("../../img/index/cover1.jpg");
     width: auto;
     height: auto;
     background-size: cover;
 }
 
 .slide-2 {
-    background-image: url("../pages/assets/img/index/cover2.jpg");
+    background-image: url("../../img/index/cover2.jpg");
     width: auto;
     height: auto;
     background-size: cover;
 }
 
 .slide-3 {
-    background-image: url("../pages/assets/img/index/cover3.jpg");
+    background-image: url("../../img/index/cover3.jpg");
     width: auto;
     height: auto;
     background-size: cover;
 }
 
 .slide-4 {
-    background-image: url("../pages/assets/img/index/cover4.jpg");
+    background-image: url("../../img/index/cover4.jpg");
     width: auto;
     height: auto;
     background-size: cover;
 }
 
 .slide-5 {
-    background-image: url("../pages/assets/img/index/cover5.jpg");
+    background-image: url("../../img/index/cover5.jpg");
     width: auto;
     height: auto;
     background-size: cover;
