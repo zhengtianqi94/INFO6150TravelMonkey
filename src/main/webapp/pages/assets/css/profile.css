@@ -1,0 +1,304 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa !important;
+}
+
+::selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none !important;
+    color: #1abc9c;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #333333;
+}
+
+b {
+    font-weight: 600;
+    color: #333333;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background-color: transparent;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+
+.main-color {
+    color: #1abc9c;
+}
+
+.page-body {
+    background: #ffffff;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.sub-title {
+    padding: 30px;
+}
+
+.sub-title h2 {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+
+}
+
+.sub-title i {
+    float: right;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.content-page {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-top: 1px dashed #dedede;
+    border-bottom: 1px dashed #dedede;
+}
+
+.grabbing {
+    cursor: url(../images/owl-carousel/grabbing.png) 8 8, move;
+}
+
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 10px 60px;
+    padding-left: 0px;
+    display: inline-block;
+    margin: 8px 30px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    outline: none;
+    position: relative;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.button:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+   -webkit-font-smoothing: antialiased;
+}
+
+.button-style {
+    color: #1abc9c;
+    overflow: hidden;
+}
+
+.button-style:before {
+    position: absolute;
+    font-size: 27px;
+    line-height: 38px;
+    color: #1abc9c;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button-style:active:before {
+    color: #1abc9c;
+}
+
+.button-anim:before {
+    left: 60%;
+    opacity: 0;
+    top: 0;
+}
+
+.button-anim:hover:before {
+    left: 75%;
+    opacity: 1;
+}
+
+
+/* Menu */
+
+.menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    color: #fff;
+    background: #1abc9c;
+    padding: 12px;
+}
+
+.menu-link {
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-link:before,
+.menu-link:after {
+    content: " ";
+    display: table;
+}
+
+.menu-link:after {
+    clear: both;
+}
+
+.menu-link li {
+    display: inline-block;
+    margin: 2px 4px;
+}
+
+.menu-link li a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-link li a:hover {
+    color: #1abc9c;
+}
+
+
+
+/* About Me (Left Sidebar) */	
+
+.about-fixed {
+    position: fixed;
+    width: 20.8%;
+}
+
+.my-pic {
+    width: 100%;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.my-pic img {
+    width: 100%;
+}
+
+.my-detail {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.my-detail .white-spacing {
+    padding: 23px 0;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.my-detail h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.my-detail span {
+    color: #c1c1c1;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+/* Blog Post & Single Blog Page */
+
+div.blog-post {
+    display: none;
+    margin-bottom: 50px;
+}
+
+.blog-post .post-image img {
+    width: 100%;
+}
+
+.blog-post .post-image p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.blog-post .post-image a {
+    font-weight: 600;
+}
+
+.blog-post .post-title h1 {
+    color: #333333;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.blog-post .post-title h2 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.blog-post .post-info {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #8c8c8c;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #696868;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+}
+
+
