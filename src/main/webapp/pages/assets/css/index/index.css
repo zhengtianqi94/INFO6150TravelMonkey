@@ -7,7 +7,7 @@
 }
 
 .offer-section {
-    background-color: rgba(0, 191, 255, 0.21);
+    background-color: #f0f0f5;
 }
 
 .photo-section {
@@ -15,7 +15,7 @@
 }
 
 .footer-section {
-    background-color: #80d4ff;
+    background-color: #b3edff;
 }
 
 .slide-1 {
@@ -120,6 +120,7 @@
     margin: auto;
     padding: 15px;
     color: white;
+    font-size: 10pt;
 }
 
 a {
@@ -133,7 +134,7 @@ a:hover {
 }
 
 .socialmediaicons ul {
-    margin: 0;
+    margin-top: 0.5%;
     padding: 0;
     list-style: none;
 }
@@ -149,6 +150,15 @@ a:hover {
 
 .socialmediaicons {
     text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.nav-item {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 @media (max-width: 1024px) {
