@@ -26,9 +26,16 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/ico/monkey.ico">
 
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.backstretch.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="../../static/JS/login.js"></script>
+
 </head>
 
-<body>
+<body ng-app="travelMonkey">
 
 <!-- Top content -->
 <div class="top-content">
@@ -60,16 +67,16 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <form role="form" action="" method="post" class="login-form">
+                            <form role="form"  class="login-form" ng-submit="submit()"  ng-controller="signin">
                                 <div class="form-group">
-                                    <label class="sr-only" for="form-username">Username</label>
+                                    <label class="sr-only" for="login-username">Username</label>
                                     <input type="text" name="form-username" placeholder="Username..."
-                                           class="form-username form-control" id="form-username">
+                                           class="form-username form-control" id="login-username" ng-model="signin_username">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="form-password">Password</label>
+                                    <label class="sr-only" for="login-password">Password</label>
                                     <input type="password" name="form-password" placeholder="Password..."
-                                           class="form-password form-control" id="form-password">
+                                           class="form-password form-control" id="login-password" ng-model="signin_password">
                                 </div>
                                 <button type="submit" class="btn">Sign in!</button>
                             </form>
@@ -93,21 +100,21 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <form role="form" action="" method="post" class="registration-form">
+                            <form role="form" ng-submit="submit()" ng-controller="signup">
                                 <div class="form-group">
-                                    <label class="sr-only" for="form-username">Username</label>
+                                    <label class="sr-only" for="signup-username">Username</label>
                                     <input type="text" name="form-username" placeholder="Username..."
-                                           class="form-username form-control" id="form-username">
+                                           class="form-username form-control" id="signup-username" ng-model="signup_username">
                                 </div>
                                 <div class="form-group">
-                                    <label class="sr-only" for="form-password">Password</label>
+                                    <label class="sr-only" for="signup-password">Password</label>
                                     <input type="text" name="form-password" placeholder="Password..."
-                                           class="form-password form-control" id="form-password">
+                                           class="form-password form-control" id="signup-password" ng-model = "signup_password">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="form-email">Email</label>
                                     <input type="text" name="form-email" placeholder="Email..."
-                                           class="form-email form-control" id="form-email">
+                                           class="form-email form-control" id="form-email" ng-model = "signup_email">
                                 </div>
                                 <button type="submit" class="btn">Sign up!</button>
                             </form>
@@ -137,10 +144,7 @@
 </footer>
 
 <!-- Javascript -->
-<script src="../assets/js/jquery-1.11.1.min.js"></script>
-<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="../assets/js/jquery.backstretch.min.js"></script>
-<script src="../assets/js/scripts.js"></script>
+
 
 </body>
 

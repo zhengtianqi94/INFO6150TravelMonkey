@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -35,6 +37,17 @@ public class UserCon {
     private FileService fileService;
 
     private JSONObject jsonObject;
+
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> home(@RequestBody User person) {
+
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("username", person.getUserName());
+        model.put("password", person.getPassWord());
+        return model;
+    }
 
     @RequestMapping("/index")
     public ModelAndView user() {
