@@ -8,15 +8,6 @@
          metadata-complete="true" version="3.0">
     <display-name>Archetype Created Web Application</display-name>
 
-    <welcome-userFile-list>
-        <welcome-userFile>index.html</welcome-userFile>
-        <welcome-userFile>index.htm</welcome-userFile>
-        <welcome-userFile>index.jsp</welcome-userFile>
-        <welcome-userFile>default.html</welcome-userFile>
-        <welcome-userFile>default.htm</welcome-userFile>
-        <welcome-userFile>default.jsp</welcome-userFile>
-    </welcome-userFile-list>
-
     <filter>
         <filter-name>hiddenHttpMethodFilter</filter-name>
         <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>

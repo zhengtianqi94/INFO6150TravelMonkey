@@ -43,6 +43,7 @@
     </bean>
 
     <mvc:resources mapping="/static/**" location="/static/" cache-period="31556926"/>
+    <mvc:resources mapping="/pages/assets/**" location="/pages/assets/" cache-period="31556926"/>
     <context:component-scan base-package="Controller"/>
     <context:component-scan base-package="DAO"/>
     <context:component-scan base-package="Entity"/>

@@ -1,0 +1,160 @@
+.nav-background {
+    background-color: white;
+}
+
+.search-section {
+    background-color: white;
+}
+
+.offer-section {
+    background-color: rgba(0, 191, 255, 0.21);
+}
+
+.photo-section {
+    background-color: white;
+}
+
+.footer-section {
+    background-color: deepskyblue;
+}
+
+.slide-1 {
+    background-image: url("../../img/index/cover1.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+.slide-2 {
+    background-image: url("../../img/index/cover2.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+.slide-3 {
+    background-image: url("../../img/index/cover3.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+.slide-4 {
+    background-image: url("../../img/index/cover4.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+.slide-5 {
+    background-image: url("../../img/index/cover5.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+.slide-content {
+    text-align: center;
+}
+
+.brand-text {
+    color: deepskyblue;
+}
+
+.btn-outline-light:hover {
+    color: #fff;
+    background-color: rgba(0, 191, 255, 0.57);
+    border-color: rgba(0, 191, 255, 0.8);
+}
+
+.btn-outline-primary {
+    color: rgba(0, 191, 255, 0.8);
+    background-color: white;
+    border-color: white;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: rgba(0, 191, 255, 0.5);
+    border-color: rgba(0, 191, 255, 0.8);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(0, 191, 255, 0.8);
+    border-color: rgba(0, 191, 255, 0.8);
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: rgba(0, 191, 255, 0.5);
+    border-color: rgba(0, 191, 255, 0.8);
+}
+
+.padding-div {
+    text-align: center;
+    padding: 25px;
+}
+
+.photo-show-case {
+    text-align: center;
+    width: auto;
+    overflow: hidden;
+}
+
+.visit-album {
+    height: 80%;
+    opacity: 0.6;
+}
+
+.visit-album:hover {
+    opacity: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(0, 127, 179)
+}
+
+.socialmediaicons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socialmediaicons ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.socialmediaicons ul li img {
+    width: 25px;
+}
+
+.socialmediaicons {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+
+    #team-link {
+        display: none;
+    }
+
+}
