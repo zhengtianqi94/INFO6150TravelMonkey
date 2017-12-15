@@ -23,7 +23,7 @@
                     <div class="SideBarItem">
                         <p>
                             <button type="button" class="btn btn-primary btn-sm" id="postButton"
-                                    onclick="window.location.href='article.html'">
+                                    onclick="window.location.href='#!article'">
                                 Add New Post
                             </button>
                         </p>
@@ -42,7 +42,7 @@
                     <div class="entry">
                         <div class="entry_date">
                             <button type="button" class="btn btn-primary btn-sm"
-                                    onclick="window.location.href='view3.html'">View
+                                    onclick="window.location.href='#!view3'">View
                             </button>
                             <button type="button" class="btn btn-success btn-sm"
                                     onclick="window.location.href='edit1.html'">Edit
@@ -81,7 +81,7 @@
                     <div class="entry">
                         <div class="entry_date">
                             <button type="button" class="btn btn-primary btn-sm"
-                                    onclick="window.location.href='view4.html'">View
+                                    onclick="window.location.href='#!view4'">View
                             </button>
                             <button type="button" class="btn btn-success btn-sm"
                                     onclick="window.location.href='edit2.html'">Edit

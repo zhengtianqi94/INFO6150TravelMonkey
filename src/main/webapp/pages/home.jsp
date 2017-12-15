@@ -1,5 +1,3 @@
-
-
 <!-- Cover photo section-->
 <div class="swiper-container">
     <div class="swiper-wrapper">
