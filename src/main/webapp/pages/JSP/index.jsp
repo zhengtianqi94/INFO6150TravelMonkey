@@ -24,12 +24,32 @@
     <link rel="stylesheet" href="../../assets/css/Global/index.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/ico/monkey.ico">
+    <link rel="shortcut icon" href="../../assets/ico/monkey.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="../../static/JS/angular.js"></script>
 
     <title>Travel Monkey</title>
 </head>
-<body>
+<body ng-app="travelMonkey">
 <main>
+
     <!-- Nav bar section -->
     <nav class="navbar navbar-expand-lg navbar-light nav-background" id="navbar-top">
         <a class="navbar-brand" onclick="window.location.href='index.html'"><img
@@ -43,7 +63,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='login.html'">Sign In / Sign Up
+                            onclick="window.location.href='index'">Sign In / Sign Up
                     </button>
                 </li>
                 <li class="nav-item active">
@@ -153,21 +173,21 @@
         <br/>
         <div class="card-deck center">
             <div class="card">
-                <img class="card-img-top" src="/assets/img/index/join_us.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/index/join_us.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Join Us</h4>
                     <p class="card-text">Join our traveller community, gain more happiness!</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="/assets/img/index/share.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/index/share.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Share Story</h4>
                     <p class="card-text">Share your story, let more travellers follow your guide!</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="/assets/img/index/search_guide.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/index/search_guide.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Search Guide</h4>
                     <p class="card-text">Search a guide, know the best way to go!</p>
@@ -183,28 +203,28 @@
             <div class="swiper-album-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit1.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit1.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit2.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit2.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit3.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit3.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit4.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit4.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
                         <img src="/assets/img/index/visit5.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit6.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit6.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit7.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit7.jpg" class="visit-album"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/img/index/visit8.jpg" class="visit-album"/>
+                        <img src="../../assets/img/index/visit8.jpg" class="visit-album"/>
                     </div>
                 </div>
             </div>
@@ -235,10 +255,10 @@
                 <div class="col">
                     <div class="socialmediaicons">
                         <ul>
-                            <li><img src="/assets/img/index/facebook.png" onclick="redirect('facebook')"></li>
-                            <li><img src="/assets/img/index/twitter.png" onclick="redirect('twitter')"></li>
-                            <li><img src="/assets/img/index/google.png" onclick="redirect('google')"></li>
-                            <li><img src="/assets/img/index/linkedin.png" onclick="redirect('linkedin')"></li>
+                            <li><img src="../../assets/img/index/facebook.png" onclick="redirect('facebook')"></li>
+                            <li><img src="../../assets/img/index/twitter.png" onclick="redirect('twitter')"></li>
+                            <li><img src="../../assets/img/index/google.png" onclick="redirect('google')"></li>
+                            <li><img src="../../assets/img/index/linkedin.png" onclick="redirect('linkedin')"></li>
                         </ul>
                     </div>
                 </div>
@@ -250,61 +270,11 @@
 <!-- Required plugin js script files-->
 
 <!-- Swiper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
 
 <!-- General JS -->
 <script src="../../assets/js/Global/index.js"></script>
 
-<!-- Initial Swiper object -->
-<script>
 
-    //Initial Swiper for cover
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        loop: true,
-        effect: 'fade',
-        centeredSlides: true,
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
-        paginationClickable: true
-    });
-
-    //Initial Swiper for album
-    var swiper_album = new Swiper('.swiper-album-container', {
-        spaceBetween: 60,
-        loop: true,
-        centeredSlides: true,
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
-        slidesPerView: 3,
-        mousewheelControl: true,
-        breakpoints: {
-            1163: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            800: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            }
-        }
-    });
-</script>
 
 </body>
 </html>

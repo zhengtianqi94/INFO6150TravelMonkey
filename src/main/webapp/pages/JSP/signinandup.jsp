@@ -56,14 +56,18 @@
     <!-- General JS -->
     <script src="../../assets/js/Global/index.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="../../static/JS/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="../../static/JS/angular.js"></script>
 
 
 </head>
 
 <body ng-app="travelMonkey">
 <main>
+
+
+    <div ng-view></div>
 
     <!-- Nav bar section -->
     <nav class="navbar navbar-expand-lg navbar-light nav-background" id="navbar-top">
@@ -78,12 +82,12 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='login.html'">Sign In / Sign Up
+                            onclick="window.location.href='#!index'">Sign In / Sign Up
                     </button>
                 </li>
                 <li class="nav-item active">
                     <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='profile.html'">Home
+                            onclick="window.location.href='#!profile'">Home
                     </button>
                 </li>
                 <li class="nav-item">

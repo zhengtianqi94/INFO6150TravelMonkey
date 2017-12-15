@@ -1,7 +1,28 @@
 /**
  * Created by zhoumengjiao on 12/14/17.
  */
-var app = angular.module('travelMonkey', []);
+var app = angular.module('travelMonkey', ["ngRoute"]);
+
+app.config(function($routeProvider) {
+    $routeProvider
+        .when(" ", {
+            templateUrl : "/pages/home.jsp",
+        })
+        .when("/", {
+            templateUrl : "/pages/home.jsp",
+        })
+        .when("/index", {
+            templateUrl : "/pages/home.jsp",
+        })
+        .when("/profile", {
+            templateUrl : "../HTML/contact.html",
+        })
+        .when("/paris", {
+            templateUrl : "paris.htm",
+            controller : "parisCtrl"
+        });
+});
+
 
 
 app.controller('signin', ['$scope', '$http', function ($scope, $http) {
