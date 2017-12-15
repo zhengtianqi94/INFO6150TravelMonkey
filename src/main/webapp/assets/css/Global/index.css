@@ -158,7 +158,12 @@ a {
     color: white;
 }
 
-a:hover {
+#team-link a:hover {
+    text-decoration: none;
+    color: rgb(0, 127, 179)
+}
+
+.top a:hover {
     text-decoration: none;
     color: rgb(0, 127, 179)
 }

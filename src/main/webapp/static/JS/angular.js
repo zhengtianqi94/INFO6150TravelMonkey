@@ -6,25 +6,49 @@ var app = angular.module('travelMonkey', ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
         .when(" ", {
-            templateUrl : "/pages/home.jsp",
+            templateUrl : "/pages/home.jsp"
         })
         .when("/", {
-            templateUrl : "/pages/home.jsp",
+            templateUrl : "/pages/home.jsp"
         })
         .when("/index", {
-            templateUrl : "/pages/home.jsp",
+            templateUrl : "/pages/home.jsp"
         })
         .when("/login", {
-            templateUrl : "/pages/login.jsp",
+            templateUrl : "/pages/login.jsp"
         })
         .when("/about", {
-            templateUrl : "/pages/about.jsp",
+            templateUrl : "/pages/about.jsp"
         })
         .when("/contact", {
-            templateUrl : "/pages/contact.jsp",
+            templateUrl : "/pages/contact.jsp"
+        })
+        .when("/results", {
+            templateUrl : "/pages/results.jsp"
+        })
+        .when("/article", {
+            templateUrl : "/pages/article.jsp"
+        })
+        .when("/view1", {
+            templateUrl : "/pages/view1.jsp"
+        })
+        .when("/view2", {
+            templateUrl : "/pages/view2.jsp"
+        })
+        .when("/view3", {
+            templateUrl : "/pages/view3.jsp"
+        })
+        .when("/view4", {
+            templateUrl : "/pages/view4.jsp"
+        })
+        .when("/view5", {
+            templateUrl : "/pages/view5.jsp"
+        })
+        .when("/view6", {
+            templateUrl : "/pages/view6.jsp"
         })
         .when("/profile", {
-            templateUrl : "/pages/profile.jsp",
+            templateUrl : "/pages/profile.jsp"
         });
 
 });

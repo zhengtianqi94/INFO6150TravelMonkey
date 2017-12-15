@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="../../assets/css/Global/swiper.css">
     <link rel="stylesheet" href="../../assets/css/Global/index.css">
     <link rel="stylesheet" href="../../assets/css/Global/login.css">
-    <link rel="stylesheet" href="../../assets/css/Global/form-elements.css">
     <link rel="stylesheet" href="../../assets/css/Global/profile.css"/>
     <link rel="stylesheet" href="../../assets/css/Global/about.css">
     <link rel="stylesheet" href="../../assets/css/Global/contact.css">
@@ -101,7 +100,7 @@
                     </div>
                 </div>
                 <div class="col" id="team-link">
-                    Developed by <a href="about.html">Travel Monkey Team</a>
+                    Developed by <a href="#!about">Travel Monkey Team</a>
                 </div>
                 <div class="col">
                     <div class="top text-right">

@@ -32,7 +32,6 @@
     <!-- General CSS-->
     <link rel="stylesheet" href="../../assets/css/Global/login.css">
     <link rel="stylesheet" href="../../assets/css/Global/index.css">
-    <link rel="stylesheet" href="../../assets/css/Global/form-elements.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/ico/monkey.ico">
