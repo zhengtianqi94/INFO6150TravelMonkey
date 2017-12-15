@@ -23,10 +23,12 @@
     <link rel="stylesheet" href="../../assets/css/Global/swiper.css">
     <link rel="stylesheet" href="../../assets/css/Global/index.css">
     <link rel="stylesheet" href="../../assets/css/Global/login.css">
-    <link rel="stylesheet" href="../../assets/css/Global/form-elements.css">
     <link rel="stylesheet" href="../../assets/css/Global/profile.css"/>
     <link rel="stylesheet" href="../../assets/css/Global/about.css">
     <link rel="stylesheet" href="../../assets/css/Global/contact.css">
+    <link rel="stylesheet" href="../../assets/css/Global/results.css">
+    <link rel="stylesheet" href="../../assets/css/Global/view.css">
+    <link rel="stylesheet" href="../../assets/css/Global/article.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/ico/monkey.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
@@ -101,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col" id="team-link">
-                    Developed by <a href="about.html">Travel Monkey Team</a>
+                    Developed by <a href="#!about">Travel Monkey Team</a>
                 </div>
                 <div class="col">
                     <div class="top text-right">

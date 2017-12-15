@@ -1,5 +1,3 @@
-
-
 <!-- Cover photo section-->
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -63,7 +61,7 @@
 <div class="padding-div search-section" id="search-section">
     <h1>Search Guide Now!</h1>
     <br/>
-    <form action="results.html">
+    <form action="#!results">
         <div class="form-row">
             <div class="form-group col-md-2"></div>
             <div class="form-group col-md-3">

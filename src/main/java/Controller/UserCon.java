@@ -72,7 +72,6 @@ public class UserCon {
         return user.toJSON();
     }
 
-//    @RequestMapping(value = "/User", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
     public
     @ResponseBody
