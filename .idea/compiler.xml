@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="INFO6150_2" target="1.5" />
-      <module name="TravelMonkey" target="1.5" />
+      <module name="TravelMonkey" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

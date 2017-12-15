@@ -6,13 +6,16 @@ import Entity.User;
 import Service.FileService;
 import Service.PostService;
 import Service.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -39,9 +42,9 @@ public class UserCon {
     private JSONObject jsonObject;
 
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public Map<String, Object> home(@RequestBody User person) {
+    public Map<String, Object> home(@RequestBody User  person) throws IOException {
 
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("username", person.getUserName());

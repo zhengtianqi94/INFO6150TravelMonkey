@@ -9,14 +9,17 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
     $scope.list = [];
     $scope.submit = function () {
 
-        var formData = {
-            "UserName": "hello",
-            "PassWord": "hello",
-        };
+        $scope.user ={"userName": $scope.signin_username,"passWord":$scope.signin_password } ;
+        console.log( $scope.user);
 
-        console.log(formData);
-
-        var response = $http.post('/tripuser/login', formData);
+       var response = $http({
+            method : "POST",
+            url : "/tripuser/login",
+            data : JSON.stringify($scope.user),
+            headers : {
+                'Content-Type' : 'application/json'
+            }
+        });
         response.success(function (data, status, headers, config) {
            console.log(data);
         });

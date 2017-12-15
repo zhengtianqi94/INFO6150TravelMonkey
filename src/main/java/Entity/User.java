@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "User")
-public class User {
+public class User{
 
     @Id
     @GenericGenerator(name = "idGenerator", strategy = "native")
