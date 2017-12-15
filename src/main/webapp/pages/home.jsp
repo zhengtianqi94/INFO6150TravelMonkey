@@ -1,37 +1,4 @@
-<!-- Nav bar section -->
-<nav class="navbar navbar-expand-lg navbar-light nav-background" id="navbar-top">
-    <a class="navbar-brand" onclick="window.location.href='index.html'"><img
-            src="/assets/img/index/monkey-icon.png" width="25"/>Travel<span
-            class="brand-text">Monkey</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline-primary"
-                        onclick="window.location.href='index'">Sign In / Sign Up
-                </button>
-            </li>
-            <li class="nav-item active">
-                <button type="button" class="btn btn-outline-primary"
-                        onclick="window.location.href='profile.html'">Home
-                </button>
-            </li>
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline-primary"
-                        onclick="window.location.href='about.html'">About
-                </button>
-            </li>
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline-primary"
-                        onclick="window.location.href='contact.html'">Contact
-                </button>
-            </li>
-        </ul>
-    </div>
-</nav>
+
 
 <!-- Cover photo section-->
 <div class="swiper-container">

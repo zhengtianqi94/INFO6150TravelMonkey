@@ -38,7 +38,7 @@ public class PostCon {
     @RequestMapping(value = "/Post", method = RequestMethod.GET)
     public ModelAndView getPosts(ModelAndView model) {
         model.addObject("posts", postService.getPosts());
-        model.setViewName("post");
+        model.setViewName("JSP/post");
         return model;
     }
 

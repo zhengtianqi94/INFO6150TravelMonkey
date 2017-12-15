@@ -14,9 +14,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
@@ -47,7 +45,7 @@ public class FileCon {
     @RequestMapping(value = "/File", method = RequestMethod.GET)
     public ModelAndView getFiles(ModelAndView model) {
         model.addObject("files", fileService.getFiles());
-        model.setViewName("file");
+        model.setViewName("JSP/file");
         return model;
     }
 

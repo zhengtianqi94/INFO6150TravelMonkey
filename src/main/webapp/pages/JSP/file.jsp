@@ -11,7 +11,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <script src="../static/JS/FileJS.js" type="text/javascript"></script>
+    <script src="../../static/JS/FileJS.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>TripMonkey File Test Page</title>
 </head>

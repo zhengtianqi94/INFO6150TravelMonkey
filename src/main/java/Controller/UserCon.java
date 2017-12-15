@@ -6,7 +6,6 @@ import Entity.User;
 import Service.FileService;
 import Service.PostService;
 import Service.UserService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -60,7 +59,7 @@ public class UserCon {
     @RequestMapping(value = "/User", method = RequestMethod.GET)
     public ModelAndView getUsers(ModelAndView model) {
         model.addObject("users", userService.getUsers());
-        model.setViewName("user");
+        model.setViewName("JSP/user");
         return model;
     }
 
@@ -72,7 +71,6 @@ public class UserCon {
         return user.toJSON();
     }
 
-    @RequestMapping(value = "/User", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
     public
     @ResponseBody

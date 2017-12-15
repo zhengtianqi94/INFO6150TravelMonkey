@@ -14,13 +14,19 @@ app.config(function($routeProvider) {
         .when("/index", {
             templateUrl : "/pages/home.jsp",
         })
-        .when("/profile", {
-            templateUrl : "../HTML/contact.html",
+        .when("/login", {
+            templateUrl : "/pages/login.jsp",
         })
-        .when("/paris", {
-            templateUrl : "paris.htm",
-            controller : "parisCtrl"
+        .when("/about", {
+            templateUrl : "/pages/about.jsp",
+        })
+        .when("/contact", {
+            templateUrl : "/pages/contact.jsp",
+        })
+        .when("/profile", {
+            templateUrl : "/pages/profile.jsp",
         });
+
 });
 
 
