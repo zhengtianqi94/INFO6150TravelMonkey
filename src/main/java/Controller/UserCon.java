@@ -73,7 +73,6 @@ public class UserCon {
     }
 
     @RequestMapping(value = "/User", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
-    @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
     public
     @ResponseBody
     Object SignIn(@PathVariable("UserName") String UserName, @RequestParam("PassWord") String PassWord) {
