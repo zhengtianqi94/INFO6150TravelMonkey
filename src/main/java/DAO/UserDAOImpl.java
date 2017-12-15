@@ -41,7 +41,20 @@ public class UserDAOImpl implements UserDAO {
         tran.commit();
         session.flush();
         session.close();
-        if(users.size() == 0) return null;
+        if (users.size() == 0) return null;
+        else return users.get(0);
+    }
+
+    public User getUser(String UserName, String PassWord) {
+        session = this.sessionFactory_UserDAO.getCurrentSession();
+        if (!session.isOpen()) session = sessionFactory_UserDAO.openSession();
+        Transaction tran = session.beginTransaction();
+        Query query = session.createQuery("from User user where user.UserName = " + UserName + " and user.PassWord = " + PassWord);
+        List<User> users = query.list();
+        tran.commit();
+        session.flush();
+        session.close();
+        if (users.size() == 0) return null;
         else return users.get(0);
     }
 
@@ -73,7 +86,7 @@ public class UserDAOImpl implements UserDAO {
             Query query = session.createQuery("delete User where id = " + id);
             query.executeUpdate();
             tran.commit();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("User delete exception catched: " + e.getStackTrace());
             session.flush();
             session.close();
