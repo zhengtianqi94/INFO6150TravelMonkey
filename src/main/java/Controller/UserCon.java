@@ -72,6 +72,7 @@ public class UserCon {
         return user.toJSON();
     }
 
+    @RequestMapping(value = "/User", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
     public
     @ResponseBody
@@ -83,13 +84,12 @@ public class UserCon {
     @RequestMapping(value = "/User", method = RequestMethod.POST)
     public
     @ResponseBody
-    Object addUser(@RequestParam("UserName") String UserName, @RequestParam("PassWord") String PassWord,
-                   @RequestParam("Email") String Email) {
+    Object addUser(@RequestBody User  person) {
         try {
             jsonObject = new JSONObject();
             Set<Post> postSet = new HashSet<Post>();
             Set<UserFile> userFileSet = new HashSet<UserFile>();
-            User user = new User(UserName, PassWord, Email);
+            User user = person;
             UserFile userFile = new UserFile("User add Test UserFile path");
             Post post = new Post("User add Test Post");
             postSet.add(post);

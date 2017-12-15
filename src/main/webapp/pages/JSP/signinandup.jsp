@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: zhoumengjiao
+  Date: 12/15/17
+  Time: 1:55 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,10 +39,35 @@
 
     <title>Travel Monkey - Login & Register</title>
 
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <script src="../../assets/js/Global/jquery.backstretch.min.js"></script>
+    <script src="/assets/js/Global/scripts.js"></script>
+
+    <!-- General JS -->
+    <script src="../../assets/js/Global/index.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="../../static/JS/angular.js"></script>
+
+
 </head>
 
-<body>
+<body ng-app="travelMonkey">
 <main>
+
+
+    <div ng-view></div>
 
     <!-- Nav bar section -->
     <nav class="navbar navbar-expand-lg navbar-light nav-background" id="navbar-top">
@@ -49,12 +82,12 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='login.html'">Sign In / Sign Up
+                            onclick="window.location.href='#!index'">Sign In / Sign Up
                     </button>
                 </li>
                 <li class="nav-item active">
                     <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='profile.html'">Home
+                            onclick="window.location.href='#!profile'">Home
                     </button>
                 </li>
                 <li class="nav-item">
@@ -102,7 +135,7 @@
                                 </div>
                             </div>
                             <div class="form-bottom">
-                                <form role="form" action="" method="post" class="login-form">
+                                <form role="form" ng-submit="submit()"  ng-controller="signin" class="login-form">
                                     <div class="form-group">
                                         <label class="sr-only" for="form-username-login">Username</label>
                                         <input type="text" name="form-username" placeholder="Username."

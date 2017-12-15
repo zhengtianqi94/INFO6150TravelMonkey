@@ -1,7 +1,28 @@
 /**
  * Created by zhoumengjiao on 12/14/17.
  */
-var app = angular.module('travelMonkey', []);
+var app = angular.module('travelMonkey', ["ngRoute"]);
+
+app.config(function($routeProvider) {
+    $routeProvider
+        .when(" ", {
+            templateUrl : "/pages/home.jsp",
+        })
+        .when("/", {
+            templateUrl : "/pages/home.jsp",
+        })
+        .when("/index", {
+            templateUrl : "/pages/home.jsp",
+        })
+        .when("/profile", {
+            templateUrl : "../HTML/contact.html",
+        })
+        .when("/paris", {
+            templateUrl : "paris.htm",
+            controller : "parisCtrl"
+        });
+});
+
 
 
 app.controller('signin', ['$scope', '$http', function ($scope, $http) {
@@ -14,7 +35,7 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
 
        var response = $http({
             method : "POST",
-            url : "/tripuser/login",
+            url : "/tripuser/User",
             data : JSON.stringify($scope.user),
             headers : {
                 'Content-Type' : 'application/json'
@@ -39,12 +60,12 @@ app.controller('signup', ['$scope', '$http', function ($scope, $http) {
     $scope.submit = function () {
 
         var formData = {
-            "UserName": $scope.signup_username,
-            "PassWord": $scope.signup_password,
-            "Email": $scope.signup_email,
+            "userName": $scope.signup_username,
+            "passWord": $scope.signup_password,
+            "email": $scope.signup_email,
         };
 
-        var response = $http.post('/tripuser/login', formData);
+        var response = $http.post('/tripuser/User', formData);
         response.success(function (data, status, headers, config) {
             console.log(data);
         });
