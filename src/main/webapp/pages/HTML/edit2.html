@@ -16,17 +16,16 @@
     <link rel="stylesheet" href="../assets/css/Global/bootstrap-social-gh-pages/bootstrap-social.css">
 
     <!-- General CSS -->
-    <link rel="stylesheet" href="../assets/css/Global/about.css">
+    <link rel="stylesheet" href="../assets/css/Global/edit.css">
     <link rel="stylesheet" href="../assets/css/Global/index.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/ico/monkey.ico">
 
-    <title>Travel Monkey - About Us</title>
+    <title>Travel Monkey - Edit Your Guide</title>
 </head>
 <body>
 <main>
-
     <!-- Nav bar section -->
     <nav class="navbar navbar-expand-lg navbar-light nav-background" id="navbar-top">
         <a class="navbar-brand" onclick="window.location.href='index.html'"><img
@@ -62,48 +61,74 @@
         </div>
     </nav>
 
-    <div class="row about-head">
-        <div class="about-header col-sm text">
-            <h1>About Travel <span class="brand-text">Monkey</span></h1>
+    <div class="row edit-head">
+        <div class="edit-header col-sm text">
+            <h1>Travel <span class="brand-text">Monkey</span> Guide Edit</h1>
             <div>
                 <h4>
-                    This is our team. This is Travel Monkeys.
+                    Edit your guide, make it better.
                 </h4>
             </div>
         </div>
     </div>
 
-    <!-- About Us -->
-    <div class="aboutus-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="aboutus">
-                        <h2 class="aboutus-title">About Us</h2>
-                        <p class="aboutus-text">TravelMonkey, the NEU's largest travel site, enables travelers to
-                            unleash the full potential of every trip. </p>
-                        <p class="aboutus-text">TravelMonkey provides travelers
-                            with the wisdom of the crowds to help them decide where to stay, how to fly, what to do and
-                            where to eat.</p>
-                        <p class="aboutus-text">TravelMonkey also lets users share their travelling stories with others,
-                            you
-                            can also search others' stories and make friends with them.</p>
-                        <p class="aboutus-text">TravelMonkey site is based on Spring MVC and Bootstrap. Many advanced
-                            front-end skills have been applied on it.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a>Edit Article</a>
+                        </h4>
+                        <br>
                     </div>
-                </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Travel to Montreal, Canada" required/>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Montreal is a city with history. It has a very long and beautiful French past (it was one of the first cities in Canada) making it one of Canada’s most historic places. With countless museums and galleries, the second largest botanical garden in the world, and parks scattered all over the city, there is plenty to keep you busy. In addition, the Old Town harks back to medieval Europe and the French-inspired cuisine and eclectic nightlife (especially the jazz clubs) leave little to dislike about this city." rows="20" required></textarea>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- Middle Line -->
-                <div class="col-sm-1"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="well well-sm well-primary">
+                                    <div class="input-group image-preview">
+                                        <input type="text" class="form-control image-preview-filename"
+                                               disabled="disabled">
+                                        <!-- don't give a name === doesn't send on POST/GET -->
+                                        <span class="input-group-btn">
 
+                                        <!-- image-preview-clear button -->
+                                        <button type="button" class="btn btn-default image-preview-clear"
+                                                style="display:none;">
+                                            <span class="glyphicon glyphicon-remove"></span> Clear
+                                        </button>
 
-                <div class="col-sm-4">
-                    <div class="aboutus">
-                        <h2 class="aboutus-title"><img src="../assets/ico/monkey.ico"> Team Members</h2>
-                        <p class="aboutus-text"><strong>Tianqi Zheng</strong></p>
-                        <p class="aboutus-text"><strong>Tianyu Wang</strong></p>
-                        <p class="aboutus-text"><strong>Mengjiao Zhou</strong></p>
-                        <p class="aboutus-text"><strong>Yuxin Zhang</strong></p>
+                                            <!-- image-preview-input -->
+                                        <div class="btn btn-default image-preview-input">
+                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                            <span class="image-preview-input-title">Browse</span>
+                                            <input type="file" accept="image/png, image/jpeg, image/gif"
+                                                   name="input-file-preview"/>
+                                            <!-- rename it -->
+                                        </div>
+
+                                        </span>
+                                    </div><!-- /input-group image-preview [TO HERE]-->
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary" id="postButton">Confirm
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,8 +170,13 @@
             </div>
         </div>
     </footer>
-
 </main>
+
+<!-- Required plugin js script files-->
+
+<!-- Swiper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -158,6 +188,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+
+<!-- General JS -->
+<script src="../assets/js/Global/index.js"></script>
+<script src="../assets/js/Global/article.js"></script>
+<script src="../assets/js/Global/jquery-1.11.1.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/Global/jquery.backstretch.min.js"></script>
+<script src="../assets/js/Global/scripts.js"></script>
 
 <!-- General JS -->
 <script src="../assets/js/Global/index.js"></script>

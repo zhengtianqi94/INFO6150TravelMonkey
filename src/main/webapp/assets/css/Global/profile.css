@@ -236,6 +236,13 @@ div.SideBarItem img {
     background-color: #66ccff;
 }
 
+.btn-primary {
+    width: 60px;
+    cursor: pointer;
+    border-color: #66ccff;
+    background-color: #66ccff;
+}
+
 .btn-danger {
     width: 60px;
     cursor: pointer;
