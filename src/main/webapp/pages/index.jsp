@@ -132,7 +132,9 @@
 <!-- Swiper -->
 
 <!-- General JS -->
+<script src="../../assets/js/Global/jquery-1.11.1.js"></script>
 <script src="../../assets/js/Global/index.js"></script>
+<script src="../../assets/js/Global/script.js"></script>
 
 <!-- Initial Swiper object -->
 <script>
