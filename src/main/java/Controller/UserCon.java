@@ -72,6 +72,14 @@ public class UserCon {
         return user.toJSON();
     }
 
+    @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
+    public
+    @ResponseBody
+    Object SignIn(@PathVariable("UserName") String UserName, @RequestParam("PassWord") String PassWord) {
+        User user = userService.getUser(UserName, PassWord);
+        return user.toJSON();
+    }
+
     @RequestMapping(value = "/User", method = RequestMethod.POST)
     public
     @ResponseBody

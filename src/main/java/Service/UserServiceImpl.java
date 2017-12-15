@@ -23,6 +23,10 @@ public class UserServiceImpl implements UserService {
         return userDAO.getUser(id);
     }
 
+    public User getUser(String UserName, String PassWord){
+        return userDAO.getUser(UserName,PassWord);
+    }
+
     public List<User> getUsers() {
         return userDAO.getUsers();
     }

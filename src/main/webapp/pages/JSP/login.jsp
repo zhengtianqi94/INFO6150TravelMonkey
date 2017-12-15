@@ -76,16 +76,18 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <form role="form"  class="login-form" ng-submit="submit()"  ng-controller="signin">
+                            <form role="form" class="login-form" ng-submit="submit()" ng-controller="signin">
                                 <div class="form-group">
                                     <label class="sr-only" for="login-username">Username</label>
                                     <input type="text" name="form-username" placeholder="Username..."
-                                           class="form-username form-control" id="login-username" ng-model="signin_username">
+                                           class="form-username form-control" id="login-username"
+                                           ng-model="signin_username">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="login-password">Password</label>
                                     <input type="password" name="form-password" placeholder="Password..."
-                                           class="form-password form-control" id="login-password" ng-model="signin_password">
+                                           class="form-password form-control" id="login-password"
+                                           ng-model="signin_password">
                                 </div>
                                 <button type="submit" class="btn">Sign in!</button>
                             </form>
@@ -113,17 +115,19 @@
                                 <div class="form-group">
                                     <label class="sr-only" for="signup-username">Username</label>
                                     <input type="text" name="form-username" placeholder="Username..."
-                                           class="form-username form-control" id="signup-username" ng-model="signup_username">
+                                           class="form-username form-control" id="signup-username"
+                                           ng-model="signup_username">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="signup-password">Password</label>
                                     <input type="text" name="form-password" placeholder="Password..."
-                                           class="form-password form-control" id="signup-password" ng-model = "signup_password">
+                                           class="form-password form-control" id="signup-password"
+                                           ng-model="signup_password">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="form-email">Email</label>
                                     <input type="text" name="form-email" placeholder="Email..."
-                                           class="form-email form-control" id="form-email" ng-model = "signup_email">
+                                           class="form-email form-control" id="form-email" ng-model="signup_email">
                                 </div>
                                 <button type="submit" class="btn">Sign up!</button>
                             </form>

@@ -38,6 +38,25 @@ function GetUserByID(UID) {
     })
 }
 
+function SignIn(UserName, Pass) {
+    console.log("Call GetUser");
+    $.ajax({
+        type: 'POST',
+        url: '/tripuser/User/' + UserName,
+        async: true,
+        data: {
+            'Pass': Pass
+        },
+        dataType: 'json',
+        success: function (data) {
+            console.log(data);
+        },
+        error: function (msg) {
+            console.log("Error " + JSON.stringify(msg));
+        }
+    })
+}
+
 function UserAdd() {
     console.log("Call UserAdd");
     username = document.getElementById("username").value;
