@@ -47,6 +47,18 @@ app.config(function($routeProvider) {
         .when("/view6", {
             templateUrl : "/pages/view6.jsp"
         })
+        .when("/results", {
+            templateUrl : "/pages/results.jsp",
+        })
+        .when("/edit", {
+            templateUrl: function(params){ return '/pages/edit'+params.number+'.jsp';}
+        })
+        .when("/view/:number", {
+            templateUrl: function(params){ return '/pages/view'+params.number+'.jsp';}
+        })
+        .when("/article", {
+            templateUrl : "/pages/article.jsp",
+        })
         .when("/profile", {
             templateUrl : "/pages/profile.jsp"
         });
