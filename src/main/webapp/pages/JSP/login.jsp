@@ -145,7 +145,7 @@
 
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="footer-border"></div>
-                <p>Copyright 2017, <a href="index.html" target="_blank"><strong>Travel Monkey</strong></a></p>
+                <p>Copyright 2017, <a href="../HTML/index.html" target="_blank"><strong>Travel Monkey</strong></a></p>
             </div>
 
         </div>
