@@ -156,7 +156,7 @@
         loop: true,
         effect: 'fade',
         centeredSlides: true,
-        autoplay: 1000,
+        autoplay: 3000,
         autoplayDisableOnInteraction: false,
         paginationClickable: true
     });
@@ -166,7 +166,7 @@
         spaceBetween: 60,
         loop: true,
         centeredSlides: true,
-        autoplay: 1000,
+        autoplay: 3000,
         autoplayDisableOnInteraction: false,
         slidesPerView: 3,
         mousewheelControl: true,
