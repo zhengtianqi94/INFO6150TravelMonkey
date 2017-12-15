@@ -1,0 +1,60 @@
+.contact-head {
+    height: 400px;
+    background-image: url("../../img/backgrounds/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.contact-header {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 10%;
+    padding: 0;
+}
+
+.contact-text {
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.top-content {
+    width: auto;
+}
+
+.contact-info {
+    padding: 60px;
+}
+
+.btn-outline-primary {
+    color: rgba(0, 191, 255, 0.8);
+    background-color: white;
+    border-color: white;
+}
+
+h3 {
+    color: #000;
+}
+
+h4{
+    color:#fff
+}
+
+.top-content .text {
+    width: auto;
+    color: #000;
+}
+
+.top-content .text h1 {
+    color: #fff;
+}
+
+
+@media (max-width: 1024px) {
+
+    .contact-head{
+        background-image: none;
+        background-color: rgba(0, 191, 255, 0.5);;
+    }
+
+}

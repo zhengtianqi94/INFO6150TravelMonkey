@@ -1,3 +1,18 @@
+.article-head {
+    height: 400px;
+    background-image: url("../../img/backgrounds/article.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.article-header {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 10%;
+    padding: 0;
+}
+
 .form-inline .form-group { margin-right:10px; }
 
 .glyphicon { margin-right:5px; }
@@ -33,9 +48,11 @@
     margin-bottom: 2%;
 }
 
-#postButton {
-    width: 80px;
-    cursor: pointer;
-    border-color: #80d4ff;
-    background-color: #80d4ff;
+@media (max-width: 1024px) {
+
+    .article-head{
+        background-image: none;
+        background-color: rgba(0, 191, 255, 0.5);;
+    }
+
 }

@@ -1,0 +1,58 @@
+.edit-head {
+    height: 400px;
+    background-image: url("../../img/backgrounds/edit.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.edit-header {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 10%;
+    padding: 0;
+}
+
+.form-inline .form-group { margin-right:10px; }
+
+.glyphicon { margin-right:5px; }
+
+.container{
+    margin-top:20px;
+}
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.image-preview-input input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+
+.container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 1024px) {
+
+    .article-head{
+        background-image: none;
+        background-color: rgba(0, 191, 255, 0.5);;
+    }
+
+}

@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
     <!-- Icon CSS -->
     <link rel="stylesheet" href="/assets/css/Global/open-iconic-master/font/css/open-iconic-bootstrap.css">
 
@@ -16,16 +20,17 @@
     <link rel="stylesheet" href="/assets/css/Global/bootstrap-social-gh-pages/bootstrap-social.css">
 
     <!-- General CSS -->
-    <link rel="stylesheet" href="/assets/css/Global/article.css">
     <link rel="stylesheet" href="/assets/css/Global/index.css">
+    <link rel="stylesheet" href="/assets/css/Global/contact.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/ico/monkey.ico">
 
-    <title>Travel Monkey - Write an Article</title>
+    <title>Travel Monkey - Contact Info</title>
 </head>
 <body>
 <main>
+
     <!-- Nav bar section -->
     <nav class="navbar navbar-expand-lg navbar-light nav-background" id="navbar-top">
         <a class="navbar-brand" onclick="window.location.href='index.html'"><img
@@ -61,81 +66,41 @@
         </div>
     </nav>
 
-    <div class="row article-head">
-        <div class="article-header col-sm text">
-            <h1>Travel <span class="brand-text">Monkey</span> Guide Share</h1>
-            <div>
-                <h4>
-                    Write your guide, share your story.
-                </h4>
+    <!-- Contact Info -->
+    <div class="top-content">
+        <!-- Header -->
+        <div class="row contact-head">
+            <div class="contact-header col-sm text">
+                <h1>Contact Travel <span class="brand-text">Monkey</span></h1>
+                <div>
+                    <h4>
+                        Thank you for your interest. We will be happy to assist you.
+                    </h4>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a>New Article</a>
-                        </h4>
-                        <br>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Title" required/>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Content" rows="20" required></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="well well-sm well-primary">
-                                    <div class="input-group image-preview">
-                                        <input type="text" class="form-control image-preview-filename"
-                                               disabled="disabled">
-                                        <!-- don't give a name === doesn't send on POST/GET -->
-                                        <span class="input-group-btn">
-
-                                        <!-- image-preview-clear button -->
-                                        <button type="button" class="btn btn-default image-preview-clear"
-                                                style="display:none;">
-                                            <span class="glyphicon glyphicon-remove"></span> Clear
-                                        </button>
-
-                                            <!-- image-preview-input -->
-                                        <div class="btn btn-default image-preview-input">
-                                            <span class="glyphicon glyphicon-folder-open"></span>
-                                            <span class="image-preview-input-title">Browse</span>
-                                            <input type="file" accept="image/png, image/jpeg, image/gif"
-                                                   name="input-file-preview"/>
-                                            <!-- rename it -->
-                                        </div>
-
-                                        </span>
-                                    </div><!-- /input-group image-preview [TO HERE]-->
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <button type="submit" class="btn btn-primary" id="postButton">
-                                    Post
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
+        <div>
+            <div class="contact-info">
+                <div class="row contact-text">
+                    <h3>You can Email us</h3>
+                </div>
+                <div class="row contact-text">
+                    <button class="btn btn-primary"><a href="mailto:support@travelmonkey.com">
+                        support@travelmonkey.com</a></button>
+                </div>
+                <br/>
+                <br/>
+                <div class="row contact-text">
+                    <h3>You can call our 24-hours service hot-line</h3>
+                </div>
+                <div class="row contact-text">
+                    <button class="btn btn-primary"><a href="tel:666-666-6666">
+                        666-666-6666</a></button>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Footer section -->
     <footer>
@@ -171,13 +136,8 @@
             </div>
         </div>
     </footer>
+
 </main>
-
-<!-- Required plugin js script files-->
-
-<!-- Swiper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -189,14 +149,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-
-<!-- General JS -->
-<script src="/assets/js/Global/index.js"></script>
-<script src="/assets/js/Global/article.js"></script>
-<script src="/assets/js/Global/jquery-1.11.1.min.js"></script>
-<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/js/Global/jquery.backstretch.min.js"></script>
-<script src="/assets/js/Global/scripts.js"></script>
 
 <!-- General JS -->
 <script src="/assets/js/Global/index.js"></script>

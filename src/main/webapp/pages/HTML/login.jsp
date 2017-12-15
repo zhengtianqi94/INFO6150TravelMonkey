@@ -11,25 +11,34 @@
 
 <head>
 
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Travel Monkey Login & Register Page</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/form-elements.css">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Icon CSS -->
+    <link rel="stylesheet" href="/assets/css/Global/open-iconic-master/font/css/open-iconic-bootstrap.css">
+
+    <!-- Social CSS -->
+    <link rel="stylesheet" href="/assets/css/Global/bootstrap-social-gh-pages/bootstrap-social.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- General CSS-->
+    <link rel="stylesheet" href="/assets/css/Global/login.css">
+    <link rel="stylesheet" href="/assets/css/Global/index.css">
+    <link rel="stylesheet" href="/assets/css/Global/form-elements.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/ico/monkey.ico">
+    <link rel="shortcut icon" href="/assets/ico/monkey.ico">
 
-    <script src="../assets/js/jquery-1.11.1.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/jquery.backstretch.min.js"></script>
-    <script src="../assets/js/scripts.js"></script>
+    <title>Travel Monkey - Login & Register</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="../../static/JS/login.js"></script>
 
