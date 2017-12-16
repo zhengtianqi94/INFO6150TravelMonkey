@@ -73,13 +73,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="form-password-signup">Password</label>
-                                    <input type="text" name="form-password" placeholder="Password."
+                                    <input type="password" name="form-password" placeholder="Password."
                                            class="form-password form-control" id="form-password-signup"
                                            ng-model="signup_password">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="form-email-signup">Email</label>
-                                    <input type="text" name="form-email" placeholder="Email."
+                                    <input type="email" name="form-email" placeholder="Email."
                                            class="form-email form-control" id="form-email-signup"
                                            ng-model="signup_email">
                                 </div>
