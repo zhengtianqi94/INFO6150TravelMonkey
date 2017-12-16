@@ -76,11 +76,11 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item item1">
-                    <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='#!login'" ng-hide="islogin == true">Sign In / Sign Up
+                    <button id="before-login" type="button" class="btn btn-outline-primary"
+                            onclick="window.location.href='#!login'" ng-hide="islogin">Sign In / Sign Up
                     </button>
-                    <button ng-hide="islogin != true" type="button" class="btn btn-outline-primary"
-                    >Welcome{{}}
+                    <button style="display: none" id = 'login-user' type="button" class="btn btn-outline-primary">
+
                     </button>
                 </li>
                 <li class="nav-item item2">
