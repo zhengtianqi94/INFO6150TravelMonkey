@@ -114,7 +114,9 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
                     alert("Sign In Success!");
                 }
             }, function (error) {
-                console.log(error);
+                alert("Username & Password does not match!");
+                $("#form-username-login").css("border-color", "yellow");
+                $("#form-password-login").css("border-color", "yellow");
             });
 
         }
@@ -167,7 +169,10 @@ app.controller('signup', ['$scope', '$http', function ($scope, $http) {
                 }
 
             }, function (error) {
-                console.log(error);
+                alert("Something goes wrong! Please check your input!");
+                $("#form-username-signup").css("border-color", "yellow");
+                $("#form-password-signup").css("border-color", "yellow");
+                $("#form-email-signup").css("border-color", "yellow");
             });
 
 
