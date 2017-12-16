@@ -73,55 +73,102 @@ app.config(function ($routeProvider) {
 app.controller('signin', ['$scope', '$http', function ($scope, $http) {
 
     $scope.list = [];
+    var flag = true;
     $scope.submit = function () {
 
-        $scope.user = {"userName": $scope.signin_username, "passWord": $scope.signin_password};
-        console.log($scope.user);
+        if ($scope.signin_username == null || $scope.signin_username == undefined) {
+            console.log("username error");
+            flag = false;
+            $("#form-username-login").css("border-color", "red");
+        } else {
+            flag = true;
+            $("#form-username-login").css("border-color", "blue");
+        }
+        if ($scope.signin_password == null || $scope.signin_username == undefined) {
+            console.log("password error");
+            flag = false;
+            $("#form-password-login").css("border-color", "red");
+        } else {
+            flag = true;
+            $("#form-password-login").css("border-color", "blue");
+        }
 
-        var response = $http({
-            method: "POST",
-            url: "/tripuser/User",
-            data: JSON.stringify($scope.user),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        response.success(function (data, status, headers, config) {
-            console.log(data);
-        });
-        response.error(function (data, status, headers, config) {
-            alert("Exception details: " + JSON.stringify({data: data}));
-        });
+        if (flag == true) {
+            $scope.user = {"userName": $scope.signin_username, "passWord": $scope.signin_password};
+            console.log($scope.user);
 
-        //Empty list data after process
-        $scope.list = [];
+            var response = $http({
+                method: "POST",
+                url: "/tripuser/User",
+                data: JSON.stringify($scope.user),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            response.success(function (data, status, headers, config) {
+                console.log(data);
+            });
+            response.error(function (data, status, headers, config) {
+                alert("Exception details: " + JSON.stringify({data: data}));
+            });
 
-    };
+            //Empty list data after process
+            $scope.list = [];
+
+        }
+    }
 }]);
 
 app.controller('signup', ['$scope', '$http', function ($scope, $http) {
 
     $scope.list = [];
+    var flag = true;
     $scope.submit = function () {
+        if ($scope.signup_username == null || $scope.signup_username == undefined) {
+            console.log("username error");
+            flag = false;
+            $("#form-username-signup").css("border-color", "red");
+        } else {
+            flag = true;
+            $("#form-username-signup").css("border-color", "blue");
+        }
+        if ($scope.signup_password == null || $scope.signup_password == undefined) {
+            console.log("password error");
+            flag = false;
+            $("#form-password-signup").css("border-color", "red");
+        } else {
+            flag = true;
+            $("#form-password-signup").css("border-color", "blue");
+        }
+        if ($scope.signup_email == null || $scope.signup_email == undefined) {
+            console.log("email error");
+            flag = false;
+            $("#form-email-signup").css("border-color", "red");
+        } else {
+            flag = true;
+            $("#form-email-signup").css("border-color", "blue");
+        }
 
-        var formData = {
-            "userName": $scope.signup_username,
-            "passWord": $scope.signup_password,
-            "email": $scope.signup_email,
-        };
+        if (flag == true) {
+            var formData = {
+                "userName": $scope.signup_username,
+                "passWord": $scope.signup_password,
+                "email": $scope.signup_email
+            };
 
-        var response = $http.post('/tripuser/User', formData);
-        response.success(function (data, status, headers, config) {
-            console.log(data);
-        });
-        response.error(function (data, status, headers, config) {
-            alert("Exception details: " + JSON.stringify({data: data}));
-        });
+            var response = $http.post('/tripuser/User', formData);
+            response.success(function (data, status, headers, config) {
+                console.log(data);
+            });
+            response.error(function (data, status, headers, config) {
+                alert("Exception details: " + JSON.stringify({data: data}));
+            });
 
-        //Empty list data after process
-        $scope.list = [];
+            //Empty list data after process
+            $scope.list = [];
 
-    };
+        }
+    }
 }]);
 
 
