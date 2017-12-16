@@ -79,8 +79,7 @@
                     <button id="before-login" type="button" class="btn btn-outline-primary"
                             onclick="window.location.href='#!login'" ng-hide="islogin">Sign In / Sign Up
                     </button>
-                    <button style="display: none" id = 'login-user' type="button" class="btn btn-outline-primary">
-
+                    <button style="display: none" id='login-user' type="button" class="btn btn-outline-primary">
                     </button>
                 </li>
                 <li class="nav-item item2">

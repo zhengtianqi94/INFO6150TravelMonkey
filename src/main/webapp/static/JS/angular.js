@@ -102,18 +102,17 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
                 data: $scope.user
             }).then(function (response) {
 
-                if(response.status ==200){
-                    $scope.islogin =true;
+                if (response.status == 200) {
+                    $scope.islogin = true;
                     console.log(response);
                     $scope.username = response.data.UserName;
-                   // console.log($scope.username);
-                    $("#before-login").css('display','none');
+                    // console.log($scope.username);
+                    $("#before-login").css('display', 'none');
                     $("#login-user").text('Welcome ' + $scope.username);
-                    $("#login-user").css('display','block');
+                    $("#login-user").css('display', 'block');
 
                     alert("Sign In Success!");
                 }
-
             }, function (error) {
                 console.log(error);
             });
@@ -163,7 +162,7 @@ app.controller('signup', ['$scope', '$http', function ($scope, $http) {
                 data: formData
             }).then(function (response) {
 
-                if(response.status ==200){
+                if (response.status == 200) {
                     alert("Sign Up Success! Please Sign In");
                 }
 
