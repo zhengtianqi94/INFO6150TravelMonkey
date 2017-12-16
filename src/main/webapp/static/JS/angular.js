@@ -98,11 +98,13 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
 
             $http({
                 method: "POST",
-                url: '/tripuser/User', // link UserLogin with HomeController
+                url: '/tripuser/signin', // link UserLogin with HomeController
                 data: $scope.user
             }).then(function (response) {
 
                 if(response.status ==200){
+                    $scope.islogin =true;
+                    $scope.username = response.data.username;
 
                 }
 
@@ -151,7 +153,7 @@ app.controller('signup', ['$scope', '$http', function ($scope, $http) {
             };
             $http({
                 method: "POST",
-                url: '/tripuser/User', // link UserLogin with HomeController
+                url: '/tripuser/signup', // link UserLogin with HomeController
                 data: formData
             }).then(function (response) {
 

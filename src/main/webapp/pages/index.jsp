@@ -77,7 +77,10 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item item1">
                     <button type="button" class="btn btn-outline-primary"
-                            onclick="window.location.href='#!login'">Sign In / Sign Up
+                            onclick="window.location.href='#!login'" ng-hide="islogin == true">Sign In / Sign Up
+                    </button>
+                    <button ng-hide="islogin != true" type="button" class="btn btn-outline-primary"
+                    >Welcome{{}}
                     </button>
                 </li>
                 <li class="nav-item item2">

@@ -42,15 +42,7 @@ public class UserCon {
     private JSONObject jsonObject;
 
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseBody
-    public Map<String, Object> home(@RequestBody User  person) throws IOException {
 
-        Map<String, Object> model = new HashMap<String, Object>();
-        model.put("username", person.getUserName());
-        model.put("password", person.getPassWord());
-        return model;
-    }
 
     @RequestMapping("/index")
     public ModelAndView user() {
@@ -72,15 +64,23 @@ public class UserCon {
         return user.toJSON();
     }
 
-    @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
-    public
+    @RequestMapping(value = "/signin", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    Object SignIn(@PathVariable("UserName") String UserName, @RequestParam("PassWord") String PassWord) {
-        User user = userService.getUser(UserName, PassWord);
+    public Map<String, Object> home(@RequestBody User  person) throws IOException {
+
+        User user = userService.getUser(person.getUserName(), person.getPassWord());
         return user.toJSON();
     }
 
-    @RequestMapping(value = "/User", method = RequestMethod.POST)
+ /*   @RequestMapping(value = "/User/{UserName}", method = RequestMethod.POST)
+    public
+    @ResponseBody
+    Object SignIn(@PathVariable("UserName") String UserName, @RequestParam("PassWord") String PassWord) {
+
+    }*/
+
+
+    @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public
     @ResponseBody
     Object addUser(@RequestBody User  person) {
