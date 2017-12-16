@@ -29,10 +29,16 @@
     <link rel="stylesheet" href="../../assets/css/Global/results.css">
     <link rel="stylesheet" href="../../assets/css/Global/view.css">
     <link rel="stylesheet" href="../../assets/css/Global/article.css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/ico/monkey.ico">
+    <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- Swiper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <!-- Required plugin js script files-->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -45,6 +51,8 @@
             integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
             crossorigin="anonymous"></script>
 
+    <!-- General JS -->
+    <script src="../../assets/js/Global/index.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -67,22 +75,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item item1">
                     <button type="button" class="btn btn-outline-primary"
                             onclick="window.location.href='#!login'">Sign In / Sign Up
                     </button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item item2">
                     <button type="button" class="btn btn-outline-primary"
                             onclick="window.location.href='#!profile'">Home
                     </button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item item3">
                     <button type="button" class="btn btn-outline-primary"
                             onclick="window.location.href='#!about'">About
                     </button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item item4">
                     <button type="button" class="btn btn-outline-primary"
                             onclick="window.location.href='#!contact'">Contact
                     </button>
@@ -128,54 +136,5 @@
         </div>
     </footer>
 </main>
-
-<!-- Required plugin js script files-->
-
-<!-- Swiper -->
-
-<!-- General JS -->
-<script src="../../assets/js/Global/jquery-1.11.1.js"></script>
-<script src="../../assets/js/Global/index.js"></script>
-<script src="../../assets/js/Global/script.js"></script>
-
-<!-- Initial Swiper object -->
-<script>
-
-    //Initial Swiper for cover
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        loop: true,
-        effect: 'fade',
-        centeredSlides: true,
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
-        paginationClickable: true
-    });
-
-    //Initial Swiper for album
-    var swiper_album = new Swiper('.swiper-album-container', {
-        spaceBetween: 60,
-        loop: true,
-        centeredSlides: true,
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
-        slidesPerView: 3,
-        mousewheelControl: true,
-        breakpoints: {
-            1163: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            800: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            }
-        }
-    });
-</script>
-
 </body>
 </html>
