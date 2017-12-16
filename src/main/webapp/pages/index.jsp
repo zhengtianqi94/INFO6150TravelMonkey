@@ -72,7 +72,7 @@
                             onclick="window.location.href='#!login'">Sign In / Sign Up
                     </button>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <button type="button" class="btn btn-outline-primary"
                             onclick="window.location.href='#!profile'">Home
                     </button>

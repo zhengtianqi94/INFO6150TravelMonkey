@@ -68,7 +68,7 @@
 .btn-outline-light:hover {
     color: #fff;
     background-color: rgba(0, 191, 255, 0.57);
-    border-color: rgba(0, 191, 255, 0.8);
+    border-color: rgba(0, 191, 255, 0.8) !important;
 }
 
 .btn-outline-primary {
@@ -198,6 +198,8 @@ button a:hover {
 .nav-item {
     padding-top: 2%;
     padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .navbar-brand {
