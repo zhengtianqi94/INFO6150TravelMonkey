@@ -105,7 +105,7 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
                 if(response.status ==200){
                     $scope.islogin =true;
                     $scope.username = response.data.username;
-
+                    alert("Sign In Success!");
                 }
 
             }, function (error) {

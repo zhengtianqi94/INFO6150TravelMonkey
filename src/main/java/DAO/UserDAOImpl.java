@@ -49,8 +49,9 @@ public class UserDAOImpl implements UserDAO {
         session = this.sessionFactory_UserDAO.getCurrentSession();
         if (!session.isOpen()) session = sessionFactory_UserDAO.openSession();
         Transaction tran = session.beginTransaction();
-        Query query = session.createQuery("from User user where user.UserName = " + UserName + " and user.PassWord = " + PassWord);
-        System.out.print(query.toString());
+        Query query = session.createQuery("from User user where user.UserName = '" + UserName + "' " +
+                "and user.PassWord = '" + PassWord + "'");
+        System.out.println("User select: " + query.toString());
         List<User> users = query.list();
         tran.commit();
         session.flush();

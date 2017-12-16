@@ -42,8 +42,6 @@ public class UserCon {
     private JSONObject jsonObject;
 
 
-
-
     @RequestMapping("/index")
     public ModelAndView user() {
         return new ModelAndView("redirect:/index");
@@ -64,9 +62,9 @@ public class UserCon {
         return user.toJSON();
     }
 
-    @RequestMapping(value = "/signin", method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/signin", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public Map<String, Object> home(@RequestBody User  person) throws IOException {
+    public Map<String, Object> home(@RequestBody User person) throws IOException {
 
         User user = userService.getUser(person.getUserName(), person.getPassWord());
         return user.toJSON();
@@ -83,7 +81,7 @@ public class UserCon {
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public
     @ResponseBody
-    Object addUser(@RequestBody User  person) {
+    Object addUser(@RequestBody User person) {
         try {
             jsonObject = new JSONObject();
             Set<Post> postSet = new HashSet<Post>();
