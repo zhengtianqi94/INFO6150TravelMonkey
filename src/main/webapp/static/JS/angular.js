@@ -59,8 +59,10 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
                 'Content-Type' : 'application/json'
             }
         });
-        response.success(function (data, status, headers, config) {
-           console.log(data);
+        then(function (success){
+
+        },function (error){
+
         });
         response.error(function (data, status, headers, config) {
             alert("Exception details: " + JSON.stringify({data: data}));
@@ -83,14 +85,19 @@ app.controller('signup', ['$scope', '$http', function ($scope, $http) {
             "email": $scope.signup_email,
         };
 
-        var response = $http.post('/tripuser/User', formData);
-        response.success(function (data, status, headers, config) {
-            console.log(data);
-        });
-        response.error(function (data, status, headers, config) {
-            alert("Exception details: " + JSON.stringify({data: data}));
-        });
+        $http({
+            method: "POST",
+            url: '/tripuser/User', // link UserLogin with HomeController
+            data: formData
+        }).then(function (response) {
 
+            if(response.status ==200){
+
+            }
+
+        }, function (error) {
+            console.log(response);
+        });
         //Empty list data after process
         $scope.list = [];
 
