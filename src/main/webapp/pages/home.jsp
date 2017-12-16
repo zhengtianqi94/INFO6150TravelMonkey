@@ -7,7 +7,7 @@
                     <strong>Travel Monkey</strong><span class="subtitle"> always "good idea"</span>
                 </p><br/>
                 <p class="text">It leaves you speechless, then turns your into a storyteller.</p><br/>
-                <button type="button" class="btn btn-outline-light"><a href="#search-section">Search Now</a>
+                <button type="button" class="btn btn-outline-light" onclick="window.location.href='#!results'">Search Now
                 </button>
             </div>
         </div>
@@ -17,7 +17,7 @@
                     <span class="subtitle">To travel with </span><strong>Travel Monkey</strong>
                 </p><br/>
                 <p class="text">It leaves you speechless, then turns your into a storyteller.</p><br/>
-                <button type="button" class="btn btn-outline-light"><a href="#search-section">Search Now</a>
+                <button type="button" class="btn btn-outline-light" onclick="window.location.href='#!results'">Search Now
                 </button>
             </div>
         </div>
@@ -27,7 +27,7 @@
                     <span class="subtitle">To travel with </span><strong>Travel Monkey</strong>
                 </p><br/>
                 <p class="text">It leaves you speechless, then turns your into a storyteller.</p><br/>
-                <button type="button" class="btn btn-outline-light"><a href="#search-section">Search Now</a>
+                <button type="button" class="btn btn-outline-light" onclick="window.location.href='#!results'">Search Now
                 </button>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     <span class="subtitle">To travel with </span><strong>Travel Monkey</strong>
                 </p><br/>
                 <p class="text">It leaves you speechless, then turns your into a storyteller.</p><br/>
-                <button type="button" class="btn btn-outline-light"><a href="#search-section">Search Now</a>
+                <button type="button" class="btn btn-outline-light" onclick="window.location.href='#!results'">Search Now
                 </button>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     <span class="subtitle">To travel with </span><strong>Travel Monkey</strong>
                 </p><br/>
                 <p class="text">It leaves you speechless, then turns your into a storyteller.</p><br/>
-                <button type="button" class="btn btn-outline-light"><a href="#search-section">Search Now</a>
+                <button type="button" class="btn btn-outline-light" onclick="window.location.href='#!results'">Search Now
                 </button>
             </div>
         </div>
@@ -128,7 +128,7 @@
                     <img src="../../assets/img/index/visit4.jpg" class="visit-album"/>
                 </div>
                 <div class="swiper-slide">
-                    <img src="/assets/img/index/visit5.jpg" class="visit-album"/>
+                    <img src="../../assets/img/index/visit5.jpg" class="visit-album"/>
                 </div>
                 <div class="swiper-slide">
                     <img src="../../assets/img/index/visit6.jpg" class="visit-album"/>
