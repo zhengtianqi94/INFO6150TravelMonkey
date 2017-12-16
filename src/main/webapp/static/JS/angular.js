@@ -95,41 +95,20 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
 
         if (flag == true) {
             $scope.user = {"userName": $scope.signin_username, "passWord": $scope.signin_password};
-            console.log($scope.user);
 
-       var response = $http({
-            method : "POST",
-            url : "/tripuser/User",
-            data : JSON.stringify($scope.user),
-            headers : {
-                'Content-Type' : 'application/json'
-            }
-        });
-        then(function (success){
-
-        },function (error){
-
-        });
-        response.error(function (data, status, headers, config) {
-            alert("Exception details: " + JSON.stringify({data: data}));
-        });
-            var response = $http({
+            $http({
                 method: "POST",
-                url: "/tripuser/User",
-                data: JSON.stringify($scope.user),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            response.success(function (data, status, headers, config) {
-                console.log(data);
-            });
-            response.error(function (data, status, headers, config) {
-                alert("Exception details: " + JSON.stringify({data: data}));
-            });
+                url: '/tripuser/User', // link UserLogin with HomeController
+                data: $scope.user
+            }).then(function (response) {
 
-            //Empty list data after process
-            $scope.list = [];
+                if(response.status ==200){
+
+                }
+
+            }, function (error) {
+                console.log(error);
+            });
 
         }
     }
@@ -137,7 +116,6 @@ app.controller('signin', ['$scope', '$http', function ($scope, $http) {
 
 app.controller('signup', ['$scope', '$http', function ($scope, $http) {
 
-    $scope.list = [];
     var flag = true;
     $scope.submit = function () {
         if ($scope.signup_username == null || $scope.signup_username == undefined) {
@@ -171,31 +149,20 @@ app.controller('signup', ['$scope', '$http', function ($scope, $http) {
                 "passWord": $scope.signup_password,
                 "email": $scope.signup_email
             };
+            $http({
+                method: "POST",
+                url: '/tripuser/User', // link UserLogin with HomeController
+                data: formData
+            }).then(function (response) {
 
-        $http({
-            method: "POST",
-            url: '/tripuser/User', // link UserLogin with HomeController
-            data: formData
-        }).then(function (response) {
-            var response = $http.post('/tripuser/User', formData);
-            response.success(function (data, status, headers, config) {
-                console.log(data);
+                if(response.status ==200){
+
+                }
+
+            }, function (error) {
+                console.log(error);
             });
-            response.error(function (data, status, headers, config) {
-                alert("Exception details: " + JSON.stringify({data: data}));
-            });
 
-            if(response.status ==200){
-
-            }
-
-        }, function (error) {
-            console.log(response);
-        });
-        //Empty list data after process
-        $scope.list = [];
-            //Empty list data after process
-            $scope.list = [];
 
         }
     }
